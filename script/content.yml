@@ -15,7 +15,7 @@
   correct:
     - and
   incorrect:
-    - "&"
+    - \&
 - type: simple
   note: login is a noun, not a verb.
   correct:
