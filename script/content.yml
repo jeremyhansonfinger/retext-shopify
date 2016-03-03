@@ -5,16 +5,19 @@
 #     - this is the incorrect form
 #   note: this is the reasoning for the rule or guideline
 #   source: this is the source link
+#
+# format of errors:
+#   <inconsiderate term> violates Shopify style: <note>. Use <considerate term>
 
 #GRAMMAR
 - type: simple
-  note: ampersands attract attention to the least important part of the sentence.
+  note: don't replace “and” with an ampersand.
   considerate:
     - and
   inconsiderate:
     - "&"
 - type: simple
-  note: “log” is a verb, and “login” is a noun.
+  note: login is a noun, not a verb.
   considerate:
     - log into
   inconsiderate:
@@ -22,7 +25,7 @@
 
 # BRANDING
 - type: simple
-  note: this is the correct branding for Shopify documentation.
+  note: incorrect branded name.
   considerate:
     - Shopify Help Center
   inconsiderate:
@@ -32,7 +35,7 @@
     - Support Docs
     - help centre
 - type: simple
-  note: POS is branded with the acronym, not as “Point of sale”.
+  note: incorrect branded name.
   considerate:
     - Shopify POS
   inconsiderate:
@@ -40,25 +43,25 @@
 
 # AMERICAN SPELLINGS
 - type: simple
-  note: we use American spelling for our product.
+  note: write with American spelling.
   considerate:
     - color
   inconsiderate:
     - colour
 - type: simple
-  note: we use American spelling for our product.
+  note: write with American spelling.
   considerate:
     - center
   inconsiderate:
     - centre
 - type: simple
-  note: we use American spelling for our product.
+  note: write with American spelling.
   considerate:
     - canceled
   inconsiderate:
     - cancelled
 - type: simple
-  note: we use American spelling for our product.
+  note: write with American spelling.
   considerate:
     - customize
   inconsiderate:
