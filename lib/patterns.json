@@ -5,13 +5,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "and": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "&": "a"
     },
-    "note": "ampersands attract attention to the least important part of the sentence."
+    "note": "don't replace “and” with an ampersand."
   },
   {
     "id": "login-to",
@@ -19,13 +19,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "log into": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "login to": "a"
     },
-    "note": "“log” is a verb, and “login” is a noun."
+    "note": "login is a noun, not a verb."
   },
   {
     "id": "help-centre",
@@ -33,17 +33,17 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "Shopify Help Center": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "Shopify Manual": "a",
       "Shopify Docs": "a",
       "the documentation": "a",
       "Support Docs": "a",
       "help centre": "a"
     },
-    "note": "this is the correct branding for Shopify documentation."
+    "note": "incorrect branded name."
   },
   {
     "id": "Shopify-point of sale",
@@ -51,13 +51,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "Shopify POS": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "Shopify point of sale": "a"
     },
-    "note": "POS is branded with the acronym, not as “Point of sale”."
+    "note": "incorrect branded name."
   },
   {
     "id": "colour",
@@ -65,13 +65,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "color": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "colour": "a"
     },
-    "note": "we use American spelling for our product."
+    "note": "write with American spelling."
   },
   {
     "id": "centre",
@@ -79,13 +79,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "center": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "centre": "a"
     },
-    "note": "we use American spelling for our product."
+    "note": "write with American spelling."
   },
   {
     "id": "cancelled",
@@ -93,13 +93,13 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "canceled": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "cancelled": "a"
     },
-    "note": "we use American spelling for our product."
+    "note": "write with American spelling."
   },
   {
     "id": "customise",
@@ -107,12 +107,12 @@
     "categories": [
       "a"
     ],
-    "considerate": {
+    "correct": {
       "customize": "a"
     },
-    "inconsiderate": {
+    "incorrect": {
       "customise": "a"
     },
-    "note": "we use American spelling for our product."
+    "note": "write with American spelling."
   }
 ]
