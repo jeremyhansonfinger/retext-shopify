@@ -84,6 +84,69 @@
     "note": "avoid unnecessarily wordy phrases."
   },
   {
+    "id": "comprised-of",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "comprises": "a",
+      "composed of": "a"
+    },
+    "incorrect": {
+      "comprised of": "a"
+    },
+    "note": "strictly, 'comprise' just means 'include'."
+  },
+  {
+    "id": "could-of",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "could have": "a",
+      "should have": "a",
+      "would have": "a"
+    },
+    "incorrect": {
+      "could of": "a",
+      "should of": "a",
+      "would of": "a"
+    },
+    "note": "use 'have', not 'of'."
+  },
+  {
+    "id": "eg.",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "for example": "a"
+    },
+    "incorrect": {
+      "e.g.": "a",
+      "eg.": "a"
+    },
+    "note": "avoid latin abbreviations."
+  },
+  {
+    "id": "ie.",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "that is": "a"
+    },
+    "incorrect": {
+      "i.e.": "a",
+      "ie.": "a"
+    },
+    "note": "avoid latin abbreviations."
+  },
+  {
     "id": "help-centre",
     "type": "simple",
     "categories": [

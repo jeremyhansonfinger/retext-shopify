@@ -45,7 +45,7 @@
 
 ## Commonly misused words/phrases
 - type: simple
-  note: 'comprise' just means 'include'.
+  note: strictly, 'comprise' just means 'include'.
   incorrect: comprised of
   correct:
     - comprises
@@ -74,12 +74,13 @@
     - ie.
   correct:
     - that is
-- type: simple
-  note: instead of using 'etc', just list other things worth mentioning.
-  incorrect:
-    - etc
-    - etc.
-    - etcetera
+# - type: simple
+#   note: instead of using 'etc', just list other things worth mentioning.
+#   incorrect:
+#     - etc
+#     - etc.
+#     - etcetera
+#   correct:
 
 # BRANDING
 - type: simple
