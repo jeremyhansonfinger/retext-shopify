@@ -11,7 +11,7 @@
     "incorrect": {
       "login to": "a"
     },
-    "note": "login is a noun, not a verb."
+    "note": "login is a noun, not a verb"
   },
   {
     "id": "off-of",
@@ -25,7 +25,7 @@
     "incorrect": {
       "off of": "a"
     },
-    "note": "avoid unnecessary prepositions."
+    "note": "avoid unnecessary prepositions"
   },
   {
     "id": "open-up",
@@ -39,7 +39,7 @@
     "incorrect": {
       "open up": "a"
     },
-    "note": "avoid unnecessary prepositions."
+    "note": "avoid unnecessary prepositions"
   },
   {
     "id": "close-down",
@@ -53,7 +53,7 @@
     "incorrect": {
       "close down": "a"
     },
-    "note": "avoid unnecessary prepositions."
+    "note": "avoid unnecessary prepositions"
   },
   {
     "id": "as-of yet",
@@ -67,7 +67,7 @@
     "incorrect": {
       "as of yet": "a"
     },
-    "note": "avoid unnecessarily wordy phrases."
+    "note": "avoid unnecessarily wordy phrases"
   },
   {
     "id": "due-to the fact that",
@@ -81,7 +81,7 @@
     "incorrect": {
       "due to the fact that": "a"
     },
-    "note": "avoid unnecessarily wordy phrases."
+    "note": "avoid unnecessarily wordy phrases"
   },
   {
     "id": "comprised-of",
@@ -96,7 +96,7 @@
     "incorrect": {
       "comprised of": "a"
     },
-    "note": "strictly, 'comprise' just means 'include'."
+    "note": "strictly, 'comprise' just means 'include'"
   },
   {
     "id": "could-of",
@@ -129,7 +129,7 @@
       "e.g.": "a",
       "eg.": "a"
     },
-    "note": "avoid latin abbreviations."
+    "note": "avoid latin abbreviations"
   },
   {
     "id": "ie.",
@@ -144,7 +144,7 @@
       "i.e.": "a",
       "ie.": "a"
     },
-    "note": "avoid latin abbreviations."
+    "note": "avoid latin abbreviations"
   },
   {
     "id": "help-centre",
@@ -162,7 +162,7 @@
       "Support Docs": "a",
       "help centre": "a"
     },
-    "note": "incorrect branded name."
+    "note": "incorrect branded name"
   },
   {
     "id": "Shopify-point of sale",
@@ -176,7 +176,7 @@
     "incorrect": {
       "Shopify point of sale": "a"
     },
-    "note": "incorrect branded name."
+    "note": "incorrect branded name"
   },
   {
     "id": "colour",
@@ -190,7 +190,7 @@
     "incorrect": {
       "colour": "a"
     },
-    "note": "write with American spelling."
+    "note": "write with American spelling"
   },
   {
     "id": "centre",
@@ -204,7 +204,7 @@
     "incorrect": {
       "centre": "a"
     },
-    "note": "write with American spelling."
+    "note": "write with American spelling"
   },
   {
     "id": "cancelled",
@@ -218,7 +218,7 @@
     "incorrect": {
       "cancelled": "a"
     },
-    "note": "write with American spelling."
+    "note": "write with American spelling"
   },
   {
     "id": "customise",
@@ -232,6 +232,6 @@
     "incorrect": {
       "customise": "a"
     },
-    "note": "write with American spelling."
+    "note": "write with American spelling"
   }
 ]
