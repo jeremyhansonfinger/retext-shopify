@@ -28,6 +28,62 @@
     "note": "login is a noun, not a verb."
   },
   {
+    "id": "off-of",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "off": "a"
+    },
+    "incorrect": {
+      "off of": "a"
+    },
+    "note": "avoid unnecessary prepositions."
+  },
+  {
+    "id": "open-up",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "open": "a"
+    },
+    "incorrect": {
+      "open up": "a"
+    },
+    "note": "avoid unnecessary prepositions."
+  },
+  {
+    "id": "close-down",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "close": "a"
+    },
+    "incorrect": {
+      "close down": "a"
+    },
+    "note": "avoid unnecessary prepositions."
+  },
+  {
+    "id": "due-to the fact that",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "because": "a"
+    },
+    "incorrect": {
+      "due to the fact that": "a"
+    },
+    "note": "avoid unnecessarily wordy phrases."
+  },
+  {
     "id": "help-centre",
     "type": "simple",
     "categories": [
