@@ -1,34 +1,34 @@
 # - type: simple (this is defining a "simple" if X, then replace with Y relationship)
-#   considerate:
+#   correct:
 #     - this is the correct form
-#   inconsiderate:
+#   incorrect:
 #     - this is the incorrect form
 #   note: this is the reasoning for the rule or guideline
 #   source: this is the source link
 #
 # format of errors:
-#   <inconsiderate term> violates Shopify style: <note>. Use <considerate term>
+#   <incorrect term> violates Shopify style: <note>. Use <correct term>
 
 #GRAMMAR
 - type: simple
   note: don't replace “and” with an ampersand.
-  considerate:
+  correct:
     - and
-  inconsiderate:
+  incorrect:
     - "&"
 - type: simple
   note: login is a noun, not a verb.
-  considerate:
+  correct:
     - log into
-  inconsiderate:
+  incorrect:
     - login to
 
 # BRANDING
 - type: simple
   note: incorrect branded name.
-  considerate:
+  correct:
     - Shopify Help Center
-  inconsiderate:
+  incorrect:
     - Shopify Manual
     - Shopify Docs
     - the documentation
@@ -36,34 +36,34 @@
     - help centre
 - type: simple
   note: incorrect branded name.
-  considerate:
+  correct:
     - Shopify POS
-  inconsiderate:
+  incorrect:
     - Shopify point of sale
 
 # AMERICAN SPELLINGS
 - type: simple
   note: write with American spelling.
-  considerate:
+  correct:
     - color
-  inconsiderate:
+  incorrect:
     - colour
 - type: simple
   note: write with American spelling.
-  considerate:
+  correct:
     - center
-  inconsiderate:
+  incorrect:
     - centre
 - type: simple
   note: write with American spelling.
-  considerate:
+  correct:
     - canceled
-  inconsiderate:
+  incorrect:
     - cancelled
 - type: simple
   note: write with American spelling.
-  considerate:
+  correct:
     - customize
-  inconsiderate:
+  incorrect:
     - customise
 
