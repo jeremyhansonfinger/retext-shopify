@@ -9,7 +9,7 @@
 - type: simple
   note: Ampersands attract attention to the least important part of the sentence. Spell out the word “and.”
   considerate:
-    - &
+    - "&"
   inconsiderate:
     - and
 - type: simple
@@ -32,5 +32,5 @@
   note: Log is the verb, and "Login" is a noun.
   considerate:
     - log into
-  inconsiderate: 
+  inconsiderate:
     - login to
