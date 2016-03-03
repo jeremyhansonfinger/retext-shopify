@@ -92,11 +92,7 @@ function patch(entry) {
  */
 
 var data = [
-    'gender',
-    'ablist',
-    'relationships',
-    'lgbtq',
-    'suicide'
+    'content'
 ].map(function (name) {
     return yaml.load(read(join(__dirname, name + '.yml'), 'utf8'));
 });
