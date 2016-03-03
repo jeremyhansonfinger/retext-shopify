@@ -15,37 +15,37 @@
 #   incorrect: '&'
 #   correct: and
 - type: simple
-  note: login is a noun, not a verb.
+  note: login is a noun, not a verb
   incorrect: login to
   correct: log in to
 
 ## Prepositions
 - type: simple
-  note: avoid unnecessary prepositions.
+  note: avoid unnecessary prepositions
   incorrect: off of
   correct: off
 - type: simple
-  note: avoid unnecessary prepositions.
+  note: avoid unnecessary prepositions
   incorrect: open up
   correct: open
 - type: simple
-  note: avoid unnecessary prepositions.
+  note: avoid unnecessary prepositions
   incorrect: close down
   correct: close
 
 ## Wordy phrases
 - type: simple
-  note: avoid unnecessarily wordy phrases.
+  note: avoid unnecessarily wordy phrases
   incorrect: as of yet
   correct: yet
 - type: simple
-  note: avoid unnecessarily wordy phrases.
+  note: avoid unnecessarily wordy phrases
   incorrect: due to the fact that
   correct: because
 
 ## Commonly misused words/phrases
 - type: simple
-  note: strictly, 'comprise' just means 'include'.
+  note: strictly, 'comprise' just means 'include'
   incorrect: comprised of
   correct:
     - comprises
@@ -61,14 +61,14 @@
     - should have
     - would have
 - type: simple
-  note: avoid latin abbreviations.
+  note: avoid latin abbreviations
   incorrect:
     - e.g.
     - eg.
   correct:
     - for example
 - type: simple
-  note: avoid latin abbreviations.
+  note: avoid latin abbreviations
   incorrect:
     - i.e.
     - ie.
@@ -84,7 +84,7 @@
 
 # BRANDING
 - type: simple
-  note: incorrect branded name.
+  note: incorrect branded name
   correct:
     - Shopify Help Center
   incorrect:
@@ -94,24 +94,24 @@
     - Support Docs
     - help centre
 - type: simple
-  note: incorrect branded name.
+  note: incorrect branded name
   correct: Shopify POS
   incorrect: Shopify point of sale
 
 # AMERICAN SPELLINGS
 - type: simple
-  note: write with American spelling.
+  note: write with American spelling
   correct: color
   incorrect: colour
 - type: simple
-  note: write with American spelling.
+  note: write with American spelling
   correct: center
   incorrect: centre
 - type: simple
-  note: write with American spelling.
+  note: write with American spelling
   correct: canceled
   incorrect: cancelled
 - type: simple
-  note: write with American spelling.
+  note: write with American spelling
   correct: customize
   incorrect: customise
