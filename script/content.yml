@@ -51,7 +51,7 @@
     - comprises
     - composed of
 - type: simple
-  note: use 'have', not 'of'.
+  note: use 'have', not 'of'
   incorrect:
     - could of
     - should of
