@@ -9,9 +9,9 @@
 - type: simple
   note: ampersands attract attention to the least important part of the sentence.
   considerate:
-    - "&"
-  inconsiderate:
     - and
+  inconsiderate:
+    - "&"
 - type: simple
   note: this is the correct branding for Shopify documentation.
   considerate:
