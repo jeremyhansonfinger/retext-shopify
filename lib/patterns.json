@@ -3287,18 +3287,18 @@
     }
   },
   {
-    "id": "and",
+    "id": "&",
     "type": "simple",
     "categories": [
       "a"
     ],
     "considerate": {
-      "&": "a"
-    },
-    "inconsiderate": {
       "and": "a"
     },
-    "note": "Ampersands attract attention to the least important part of the sentence. Spell out the word “and.”"
+    "inconsiderate": {
+      "&": "a"
+    },
+    "note": "ampersands attract attention to the least important part of the sentence."
   },
   {
     "id": "help-centre",
@@ -3316,7 +3316,7 @@
       "Support Docs": "a",
       "help centre": "a"
     },
-    "note": "This is the correct branding for our documentation."
+    "note": "this is the correct branding for Shopify documentation."
   },
   {
     "id": "Shopify-point of sale",
@@ -3330,7 +3330,7 @@
     "inconsiderate": {
       "Shopify point of sale": "a"
     },
-    "note": "Refer to POS by the acronym, not the full name."
+    "note": "POS is branded with the acronym, not as “Point of sale”."
   },
   {
     "id": "login-to",
@@ -3344,7 +3344,7 @@
     "inconsiderate": {
       "login to": "a"
     },
-    "note": "Log is the verb, and \"Login\" is a noun."
+    "note": "“log” is a verb, and “login” is a noun."
   },
   {
     "id": "master-slave",
