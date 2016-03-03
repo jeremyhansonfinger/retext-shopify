@@ -7,13 +7,13 @@
 #   source: this is the source link
 
 - type: simple
-  note: Ampersands attract attention to the least important part of the sentence. Spell out the word “and.”
+  note: ampersands attract attention to the least important part of the sentence.
   considerate:
     - "&"
   inconsiderate:
     - and
 - type: simple
-  note: This is the correct branding for our documentation.
+  note: this is the correct branding for Shopify documentation.
   considerate:
     - Shopify Help Center
   inconsiderate:
@@ -23,13 +23,13 @@
     - Support Docs
     - help centre
 - type: simple
-  note: Refer to POS by the acronym, not the full name.
+  note: POS is branded with the acronym, not as “Point of sale”.
   considerate:
     - Shopify POS
   inconsiderate:
     - Shopify point of sale
 - type: simple
-  note: Log is the verb, and "Login" is a noun.
+  note: “log” is a verb, and “login” is a noun.
   considerate:
     - log into
   inconsiderate:
