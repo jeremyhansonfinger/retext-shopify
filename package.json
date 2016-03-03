@@ -1,24 +1,9 @@
 {
-  "name": "retext-equality",
-  "version": "2.2.1",
-  "description": "Warn about possible insensitive, inconsiderate language with Retext",
-  "license": "MIT",
-  "keywords": [
-    "equal",
-    "race",
-    "religion",
-    "sex",
-    "orientation",
-    "identity",
-    "gender",
-    "sensitive",
-    "insensitive",
-    "neutral",
-    "writing",
-    "language",
-    "english",
-    "retext"
-  ],
+  "name": "retext-rorybot",
+  "version": "0.1.0",
+  "description": "Warn about Shopify style guide violations using Retext",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "array-differ": "^1.0.0",
     "array-intersection": "^0.1.2",
@@ -35,9 +20,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wooorm/retext-equality.git"
+    "url": "https://github.com/jeremyhansonfinger/retext-rorybot.git"
   },
-  "bugs": "https://github.com/wooorm/retext-equality/issues",
+  "bugs": "https://github.com/jeremyhansonfinger/retext-rorybot/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "devDependencies": {
     "array-duplicated": "^1.0.1",
