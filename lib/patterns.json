@@ -1,6 +1,6 @@
 [
   {
-    "id": "&",
+    "id": "\\&",
     "type": "simple",
     "categories": [
       "a"
@@ -9,7 +9,7 @@
       "and": "a"
     },
     "incorrect": {
-      "&": "a"
+      "\\&": "a"
     },
     "note": "don't replace “and” with an ampersand."
   },
