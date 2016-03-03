@@ -10,18 +10,14 @@
 #   <incorrect term> violates Shopify style: <note>. Use <correct term>
 
 # GRAMMAR
-- type: simple
-  note: don't replace “and” with an ampersand.
-  correct:
-    - and
-  incorrect:
-    - \&
+# - type: simple
+#   note: don't replace “and” with an ampersand.
+#   incorrect: '&'
+#   correct: and
 - type: simple
   note: login is a noun, not a verb.
-  correct:
-    - log into
-  incorrect:
-    - login to
+  incorrect: login to
+  correct: log in to
 
 ## Prepositions
 - type: simple
@@ -40,6 +36,10 @@
 ## Wordy phrases
 - type: simple
   note: avoid unnecessarily wordy phrases.
+  incorrect: as of yet
+  correct: yet
+- type: simple
+  note: avoid unnecessarily wordy phrases.
   incorrect: due to the fact that
   correct: because
 
@@ -56,33 +56,23 @@
     - help centre
 - type: simple
   note: incorrect branded name.
-  correct:
-    - Shopify POS
-  incorrect:
-    - Shopify point of sale
+  correct: Shopify POS
+  incorrect: Shopify point of sale
 
 # AMERICAN SPELLINGS
 - type: simple
   note: write with American spelling.
-  correct:
-    - color
-  incorrect:
-    - colour
+  correct: color
+  incorrect: colour
 - type: simple
   note: write with American spelling.
-  correct:
-    - center
-  incorrect:
-    - centre
+  correct: center
+  incorrect: centre
 - type: simple
   note: write with American spelling.
-  correct:
-    - canceled
-  incorrect:
-    - cancelled
+  correct: canceled
+  incorrect: cancelled
 - type: simple
   note: write with American spelling.
-  correct:
-    - customize
-  incorrect:
-    - customise
+  correct: customize
+  incorrect: customise

@@ -1,26 +1,12 @@
 [
   {
-    "id": "\\&",
-    "type": "simple",
-    "categories": [
-      "a"
-    ],
-    "correct": {
-      "and": "a"
-    },
-    "incorrect": {
-      "\\&": "a"
-    },
-    "note": "don't replace “and” with an ampersand."
-  },
-  {
     "id": "login-to",
     "type": "simple",
     "categories": [
       "a"
     ],
     "correct": {
-      "log into": "a"
+      "log in to": "a"
     },
     "incorrect": {
       "login to": "a"
@@ -68,6 +54,20 @@
       "close down": "a"
     },
     "note": "avoid unnecessary prepositions."
+  },
+  {
+    "id": "as-of yet",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "yet": "a"
+    },
+    "incorrect": {
+      "as of yet": "a"
+    },
+    "note": "avoid unnecessarily wordy phrases."
   },
   {
     "id": "due-to the fact that",
