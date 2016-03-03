@@ -6,12 +6,21 @@
 #   note: this is the reasoning for the rule or guideline
 #   source: this is the source link
 
+#GRAMMAR
 - type: simple
   note: ampersands attract attention to the least important part of the sentence.
   considerate:
     - and
   inconsiderate:
     - "&"
+- type: simple
+  note: “log” is a verb, and “login” is a noun.
+  considerate:
+    - log into
+  inconsiderate:
+    - login to
+
+# BRANDING
 - type: simple
   note: this is the correct branding for Shopify documentation.
   considerate:
@@ -28,9 +37,30 @@
     - Shopify POS
   inconsiderate:
     - Shopify point of sale
+
+# AMERICAN SPELLINGS
 - type: simple
-  note: “log” is a verb, and “login” is a noun.
+  note: we use American spelling for our product.
   considerate:
-    - log into
+    - color
   inconsiderate:
-    - login to
+    - colour
+- type: simple
+  note: we use American spelling for our product.
+  considerate:
+    - center
+  inconsiderate:
+    - centre
+- type: simple
+  note: we use American spelling for our product.
+  considerate:
+    - canceled
+  inconsiderate:
+    - cancelled
+- type: simple
+  note: we use American spelling for our product.
+  considerate:
+    - customize
+  inconsiderate:
+    - customise
+
