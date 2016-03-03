@@ -9,7 +9,7 @@
 # format of errors:
 #   <incorrect term> violates Shopify style: <note>. Use <correct term>
 
-#GRAMMAR
+# GRAMMAR
 - type: simple
   note: don't replace “and” with an ampersand.
   correct:
@@ -22,6 +22,26 @@
     - log into
   incorrect:
     - login to
+
+## Prepositions
+- type: simple
+  note: avoid unnecessary prepositions.
+  incorrect: off of
+  correct: off
+- type: simple
+  note: avoid unnecessary prepositions.
+  incorrect: open up
+  correct: open
+- type: simple
+  note: avoid unnecessary prepositions.
+  incorrect: close down
+  correct: close
+
+## Wordy phrases
+- type: simple
+  note: avoid unnecessarily wordy phrases.
+  incorrect: due to the fact that
+  correct: because
 
 # BRANDING
 - type: simple
@@ -66,4 +86,3 @@
     - customize
   incorrect:
     - customise
-
