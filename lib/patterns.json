@@ -6,7 +6,7 @@
       "a"
     ],
     "correct": {
-      "log in to": "a"
+      "log into": "a"
     },
     "incorrect": {
       "login to": "a"
@@ -233,5 +233,19 @@
       "customise": "a"
     },
     "note": "write with American spelling"
+  },
+  {
+    "id": "unfortunately",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "(don’t say unfortunately)": "a"
+    },
+    "incorrect": {
+      "unfortunately": "a"
+    },
+    "note": "be direct and not apologetic"
   }
 ]
