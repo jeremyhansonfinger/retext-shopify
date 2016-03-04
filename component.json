@@ -1,24 +1,8 @@
 {
-  "name": "retext-equality",
-  "version": "2.2.1",
-  "description": "Warn about possible insensitive, inconsiderate language with Retext",
-  "license": "MIT",
-  "keywords": [
-    "equal",
-    "race",
-    "religion",
-    "sex",
-    "orientation",
-    "identity",
-    "gender",
-    "sensitive",
-    "insensitive",
-    "neutral",
-    "writing",
-    "language",
-    "english",
-    "retext"
-  ],
+  "name": "retext-styleguide",
+  "version": "0.1.0",
+  "description": "Warn about Shopify style guide violations with Retext",
+  "license": "UNLICENSED",
   "dependencies": {
     "sindresorhus/array-differ": "^1.0.0",
     "jonschlinkert/array-intersection": "^0.1.2",
@@ -29,7 +13,7 @@
     "wooorm/quotation": "^1.0.1",
     "wooorm/unist-util-visit": "^1.0.0"
   },
-  "repository": "wooorm/retext-equality",
+  "repository": "Shopify/retext-styleguide",
   "scripts": [
     "lib/patterns.json",
     "lib/equality.js",
