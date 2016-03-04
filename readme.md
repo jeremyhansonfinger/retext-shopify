@@ -2,7 +2,7 @@
 
 Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
 
-**retext-styleguide** is a ruleset for [**rory**]((https://github.com/Shopify/rory), a command-line linter that can be added into your text editor with [**linter-rory**](https://github.com/Shopify/linter-rory).
+**retext-styleguide** is a ruleset for [**rory**](https://github.com/Shopify/rory), a command-line linter that can be added into your text editor with [**linter-rory**](https://github.com/Shopify/linter-rory).
 
 ## Installation
 
