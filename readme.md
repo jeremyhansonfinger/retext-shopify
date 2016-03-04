@@ -1,90 +1,60 @@
-# retext-equality [![Build Status][travis-badge]][travis] [![Coverage Status][coverage-badge]][coverage]
+# retext-styleguide
 
-Warn about possible insensitive, inconsiderate language with
-[**retext**][retext].
+Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
+
+**retext-styleguide** is a ruleset for [**rory**]((https://github.com/Shopify/rory), a command-line linter that can be added into your text editor with [**linter-rory**](https://github.com/Shopify/linter-rory).
 
 ## Installation
 
-[npm][npm-install]:
+This package is automatically installed as a dependency of [**rory**](https://github.com/Shopify/rory).
 
-```bash
-npm install retext-equality
+## Contributing
+
+Content rules are written in `script/content.yml`, which is processed by `extract.js` into a JSON object.
+
+### Content rules
+
+The rule set is a list of simple word matches (for now) written in YAML with the following format:
+
+```
+- type: simple
+  note: [reason for the error]
+  incorrect: [word(s) to flag as incorrect]
+  correct: [word(s) to suggest as a correction]
 ```
 
-**retext-equality** is also available for [duo][], and as an AMD, CommonJS,
-and globals module, [uncompressed and compressed][releases].
+For example:
 
-## Usage
-
-```js
-var retext = require('retext');
-var report = require('vfile-reporter');
-var equality = require('retext-equality');
-
-retext()
-    .use(equality)
-    .process([
-        'His network was set up with a master and slave.'
-    ].join('\n'), function (err, file) {
-        console.log(report(file));
-    });
+```
+- type: simple
+  note: avoid unnecessarily wordy phrases
+  incorrect: due to the fact that
+  correct: because
 ```
 
-Yields:
+For the `note`, use a short, imperative phrase explaining the error. Don't capitalize it and don't add punctuation at the end.
 
-```text
-<stdin>
-    1:1-1:4  warning  `His` may be insensitive, use `Their`, `Theirs`, `Them` instead           her-him
-  1:31-1:37  warning  `master` / `slave` may be insensitive, use `primary` / `replica` instead  master-slave
+The `incorrect` or `correct` items can be arrays:
 
-⚠ 2 warnings
+```
+- type: simple
+  note: use 'have', not 'of'
+  incorrect:
+    - could of
+    - should of
+    - would of
+  correct:
+    - could have
+    - should have
+    - would have
 ```
 
-## API
+### Updating rules
 
-### `retext.use(equality[, options])`
-
-Adds warnings for possible insensitive, inconsiderate language to the
-processed [virtual file][vfile]s.
-
-**Parameters**
-
-*   `equality` — This plug-in;
-
-*   `options` (`Object?`, optional):
-
-    *   `ignore` (`Array.<string>`)
-        — List of phrases to _not_ warn about;
-
-    *   `noBinary` (`boolean`, default: `false`)
-        — Do not allow binary references. By default `he` is warned
-        about unless it’s followed by something like `or she` or `and she`.
-        When `noBinary` is `true`, both cases would be warned about.
-
-## License
-
-[MIT][license] © [Titus Wormer][home]
-
-<!-- Definitions -->
-
-[travis-badge]: https://img.shields.io/travis/wooorm/retext-equality.svg
-
-[travis]: https://travis-ci.org/wooorm/retext-equality
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/retext-equality.svg
-
-[coverage]: https://codecov.io/github/wooorm/retext-equality
-
-[npm-install]: https://docs.npmjs.com/cli/install
-
-[duo]: http://duojs.org/#getting-started
-
-[releases]: https://github.com/wooorm/retext-equality/releases
-
-[license]: LICENSE
-
-[home]: http://wooorm.com
-
-[retext]: https://github.com/wooorm/retext
-
-[vfile]: https://github.com/wooorm/vfile
+1. Clone this repo to your local machine and `cd` into its folder.
+2. Create a branch for your changes (`git checkout -b rule-list-update`).
+2. Open `script/content.yml` in a text editor.
+3. Make your changes to the rule list.
+4. Save `content.yml`.
+5. Run `npm run-script build-extract` from the repository root to regenerate the JSON word list.
+6. Run `git push origin your-branch-name` to create a pull request with your changes.
