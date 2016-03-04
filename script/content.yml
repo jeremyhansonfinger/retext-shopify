@@ -51,6 +51,10 @@
     - comprises
     - composed of
 - type: simple
+  note: utilize just means 'use'
+  incorrect: utilize
+  correct: use
+- type: simple
   note: use 'have', not 'of'
   incorrect:
     - could of
@@ -67,6 +71,7 @@
     - eg.
   correct:
     - for example
+    - like
 - type: simple
   note: avoid latin abbreviations
   incorrect:
@@ -74,6 +79,13 @@
     - ie.
   correct:
     - that is
+- type: simple
+  note: avoid latin abbreviations
+  incorrect: via
+  correct:
+    - by
+
+
 # - type: simple
 #   note: instead of using 'etc', just list other things worth mentioning.
 #   incorrect:
@@ -97,6 +109,14 @@
   note: incorrect branded name
   correct: Shopify POS
   incorrect: Shopify point of sale
+- type: simple
+  note: incorrect branded name
+  correct: Shopify admin
+  incorrect:
+    - Shopify administrative panel
+    - Shopify dashboard
+
+
 
 # AMERICAN SPELLINGS
 - type: simple
@@ -121,3 +141,33 @@
   note: be direct and not apologetic
   correct: (don’t say unfortunately)
   incorrect: unfortunately
+
+# DOCS SG
+- type: simple
+  note: use controlled vocabulary
+  correct: enter
+  incorrect:
+    - type in
+    - input
+    - write
+- type: simple
+  note: use controlled vocabulary
+  correct: click
+  incorrect: click on
+- type: simple
+  note: use controlled vocabulary
+  correct: want to
+  incorrect:
+    - would like to
+    - wish to
+- type: simple
+  note: use controlled vocabulary
+  correct: drop-down menu
+  incorrect:
+    - drop down menu
+    - dropdown menu
+- type: simple
+  note: use controlled vocabulary
+  correct: might
+  incorrect:
+    - may
