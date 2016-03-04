@@ -99,6 +99,20 @@
     "note": "strictly, 'comprise' just means 'include'"
   },
   {
+    "id": "utilize",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "use": "a"
+    },
+    "incorrect": {
+      "utilize": "a"
+    },
+    "note": "utilize just means 'use'"
+  },
+  {
     "id": "could-of",
     "type": "simple",
     "categories": [
@@ -123,7 +137,8 @@
       "a"
     ],
     "correct": {
-      "for example": "a"
+      "for example": "a",
+      "like": "a"
     },
     "incorrect": {
       "e.g.": "a",
@@ -143,6 +158,20 @@
     "incorrect": {
       "i.e.": "a",
       "ie.": "a"
+    },
+    "note": "avoid latin abbreviations"
+  },
+  {
+    "id": "via",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "by": "a"
+    },
+    "incorrect": {
+      "via": "a"
     },
     "note": "avoid latin abbreviations"
   },
@@ -175,6 +204,21 @@
     },
     "incorrect": {
       "Shopify point of sale": "a"
+    },
+    "note": "incorrect branded name"
+  },
+  {
+    "id": "Shopify-dashboard",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "Shopify admin": "a"
+    },
+    "incorrect": {
+      "Shopify administrative panel": "a",
+      "Shopify dashboard": "a"
     },
     "note": "incorrect branded name"
   },
@@ -247,5 +291,79 @@
       "unfortunately": "a"
     },
     "note": "be direct and not apologetic"
+  },
+  {
+    "id": "input",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "enter": "a"
+    },
+    "incorrect": {
+      "type in": "a",
+      "input": "a",
+      "write": "a"
+    },
+    "note": "use controlled vocabulary"
+  },
+  {
+    "id": "click-on",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "click": "a"
+    },
+    "incorrect": {
+      "click on": "a"
+    },
+    "note": "use controlled vocabulary"
+  },
+  {
+    "id": "wish-to",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "want to": "a"
+    },
+    "incorrect": {
+      "would like to": "a",
+      "wish to": "a"
+    },
+    "note": "use controlled vocabulary"
+  },
+  {
+    "id": "dropdown-menu",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "drop-down menu": "a"
+    },
+    "incorrect": {
+      "drop down menu": "a",
+      "dropdown menu": "a"
+    },
+    "note": "use controlled vocabulary"
+  },
+  {
+    "id": "may",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "might": "a"
+    },
+    "incorrect": {
+      "may": "a"
+    },
+    "note": "use controlled vocabulary"
   }
 ]
