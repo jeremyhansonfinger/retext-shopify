@@ -17,7 +17,7 @@
 - type: simple
   note: login is a noun, not a verb
   incorrect: login to
-  correct: log in to
+  correct: log into
 
 ## Prepositions
 - type: simple
@@ -115,3 +115,9 @@
   note: write with American spelling
   correct: customize
   incorrect: customise
+
+# VOICE AND TONE
+- type: simple
+  note: Be direct and not apologetic
+  correct: (don't say unfortunately)
+  incorrect: unfortunately
