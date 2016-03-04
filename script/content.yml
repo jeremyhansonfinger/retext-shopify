@@ -118,6 +118,6 @@
 
 # VOICE AND TONE
 - type: simple
-  note: Be direct and not apologetic
+  note: be direct and not apologetic
   correct: (don't say unfortunately)
   incorrect: unfortunately
