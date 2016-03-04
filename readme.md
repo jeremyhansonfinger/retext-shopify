@@ -57,4 +57,5 @@ The `incorrect` or `correct` items can be arrays:
 3. Make your changes to the rule list.
 4. Save `content.yml`.
 5. Run `npm run-script build-extract` from the repository root to regenerate the JSON word list.
+6. Commit your changes (`git commit -am "Your commit message"`). The changed files should be `content.yml` and `patterns.json`.
 6. Run `git push origin your-branch-name` to create a pull request with your changes.
