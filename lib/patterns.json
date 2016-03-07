@@ -84,53 +84,6 @@
     "note": "avoid unnecessarily wordy phrases"
   },
   {
-    "id": "comprised-of",
-    "type": "simple",
-    "categories": [
-      "a"
-    ],
-    "correct": {
-      "comprises": "a",
-      "composed of": "a"
-    },
-    "incorrect": {
-      "comprised of": "a"
-    },
-    "note": "strictly, 'comprise' just means 'include'"
-  },
-  {
-    "id": "utilize",
-    "type": "simple",
-    "categories": [
-      "a"
-    ],
-    "correct": {
-      "use": "a"
-    },
-    "incorrect": {
-      "utilize": "a"
-    },
-    "note": "utilize just means 'use'"
-  },
-  {
-    "id": "could-of",
-    "type": "simple",
-    "categories": [
-      "a"
-    ],
-    "correct": {
-      "could have": "a",
-      "should have": "a",
-      "would have": "a"
-    },
-    "incorrect": {
-      "could of": "a",
-      "should of": "a",
-      "would of": "a"
-    },
-    "note": "use 'have', not 'of'"
-  },
-  {
     "id": "eg.",
     "type": "simple",
     "categories": [
@@ -144,7 +97,7 @@
       "e.g.": "a",
       "eg.": "a"
     },
-    "note": "avoid latin abbreviations"
+    "note": "avoid Latin abbreviations"
   },
   {
     "id": "ie.",
@@ -159,7 +112,7 @@
       "i.e.": "a",
       "ie.": "a"
     },
-    "note": "avoid latin abbreviations"
+    "note": "avoid Latin abbreviations"
   },
   {
     "id": "via",
@@ -168,12 +121,13 @@
       "a"
     ],
     "correct": {
-      "by": "a"
+      "by": "a",
+      "with": "a"
     },
     "incorrect": {
       "via": "a"
     },
-    "note": "avoid latin abbreviations"
+    "note": "avoid Latin words"
   },
   {
     "id": "help-centre",
@@ -293,6 +247,34 @@
     "note": "be direct and not apologetic"
   },
   {
+    "id": "sorry",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "(don’t say sorry)": "a"
+    },
+    "incorrect": {
+      "sorry": "a"
+    },
+    "note": "be direct and not apologetic"
+  },
+  {
+    "id": "oops",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "(don’t say oops)": "a"
+    },
+    "incorrect": {
+      "oops": "a"
+    },
+    "note": "be direct and not apologetic"
+  },
+  {
     "id": "input",
     "type": "simple",
     "categories": [
@@ -365,5 +347,21 @@
       "may": "a"
     },
     "note": "use controlled vocabulary"
+  },
+  {
+    "id": "once-the",
+    "type": "simple",
+    "categories": [
+      "a"
+    ],
+    "correct": {
+      "when": "a",
+      "after": "a"
+    },
+    "incorrect": {
+      "once the": "a",
+      "once you": "a"
+    },
+    "note": "don't say \"once\" if you mean \"when\""
   }
 ]

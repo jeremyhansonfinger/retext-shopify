@@ -45,27 +45,7 @@
 
 ## Commonly misused words/phrases
 - type: simple
-  note: strictly, 'comprise' just means 'include'
-  incorrect: comprised of
-  correct:
-    - comprises
-    - composed of
-- type: simple
-  note: utilize just means 'use'
-  incorrect: utilize
-  correct: use
-- type: simple
-  note: use 'have', not 'of'
-  incorrect:
-    - could of
-    - should of
-    - would of
-  correct:
-    - could have
-    - should have
-    - would have
-- type: simple
-  note: avoid latin abbreviations
+  note: avoid Latin abbreviations
   incorrect:
     - e.g.
     - eg.
@@ -73,26 +53,18 @@
     - for example
     - like
 - type: simple
-  note: avoid latin abbreviations
+  note: avoid Latin abbreviations
   incorrect:
     - i.e.
     - ie.
   correct:
     - that is
 - type: simple
-  note: avoid latin abbreviations
+  note: avoid Latin words
   incorrect: via
   correct:
     - by
-
-
-# - type: simple
-#   note: instead of using 'etc', just list other things worth mentioning.
-#   incorrect:
-#     - etc
-#     - etc.
-#     - etcetera
-#   correct:
+    - with
 
 # BRANDING
 - type: simple
@@ -115,8 +87,6 @@
   incorrect:
     - Shopify administrative panel
     - Shopify dashboard
-
-
 
 # AMERICAN SPELLINGS
 - type: simple
@@ -141,6 +111,14 @@
   note: be direct and not apologetic
   correct: (don’t say unfortunately)
   incorrect: unfortunately
+- type: simple
+  note: be direct and not apologetic
+  correct: (don’t say sorry)
+  incorrect: sorry
+- type: simple
+  note: be direct and not apologetic
+  correct: (don’t say oops)
+  incorrect: oops
 
 # DOCS SG
 - type: simple
@@ -171,3 +149,11 @@
   correct: might
   incorrect:
     - may
+- type: simple
+  note: don't say "once" if you mean "when"
+  correct:
+    - when
+    - after
+  incorrect:
+    - once the
+    - once you
