@@ -11,6 +11,7 @@
   },
   "unlimited plan": {
     "cased": true,
+    "note": "The U is capitalized.",
     "replace": "Unlimited plan"
   },
   "plus plan": {
@@ -26,6 +27,7 @@
     ]
   },
   "ice": {
-    "replace": []
+    "replace": [],
+    "note": "You little wankers, get off my ice!"
   }
 }
