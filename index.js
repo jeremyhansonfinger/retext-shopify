@@ -20,7 +20,6 @@ var nlcstToString = require('nlcst-to-string');
 var quotation = require('quotation');
 var search = require('nlcst-search');
 var patterns = require('./data/index.json');
-var vocabulary = require('./data/vocabulary');
 
 //var list = {};
 
