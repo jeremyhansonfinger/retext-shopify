@@ -52,20 +52,24 @@ var list = keys(patterns);
         search(tree, phrases, function (match, position, parent, phrase) {
             var pattern = patterns[phrase];
             var replace = pattern.replace;
+            var note = pattern.note;
             var matchedString = nlcstToString(match);
             var value = quotation(nlcstToString(match), '“', '”');
+            var newvalue = quotation(replace, '“', '”');
             var message = undefined;
 
             if (!replace.length) {
-                message = 'Remove ' + value;
+                message = value + " isn't Shopify style. Avoid using it.";
+
+                  if (note)
+                      message += " (" + note + ")"
            }
             
-            else if (pattern.cased && matchedString !== replace){
-                message = "Matched " + value + ". Write as \"" + replace + ".\"";
-            }
+            else if (matchedString !== replace){
+                message = value + " isn't Shopify style. Use " + newvalue + " instead.";
 
-            else if (!pattern.cased && matchedString !== replace){
-                message = "Matched " + value + ". Write as \"" + replace + ".\"";
+                  if (note)
+                      message += " (" + note + ")"
             }
 
             else if (pattern.cased && matchedString === replace){
@@ -79,7 +83,7 @@ var list = keys(patterns);
             });
 
             message.ruleId = phrase;
-            message.source = 'retext-simplify';
+            message.source = 'retext-styleguide';
             });
             }
 
