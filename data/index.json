@@ -1,0 +1,31 @@
+{
+  "lite plan": {
+    "cased": true,
+    "replace": "Lite plan"
+  },
+  "basic plan": {
+    "cased": true
+  },
+  "pro plan": {
+    "cased": true
+  },
+  "unlimited plan": {
+    "cased": true,
+    "replace": "Unlimited plan"
+  },
+  "plus plan": {
+    "cased": true
+  },
+  "liquid": {
+    "cased": true,
+    "replace": "Liquid"
+  },
+  "refill": {
+    "replace": [
+      "fill"
+    ]
+  },
+  "ice": {
+    "replace": []
+  }
+}

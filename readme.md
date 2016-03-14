@@ -1,61 +1,84 @@
-# retext-styleguide
+# retext-simplify [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
-
-**retext-styleguide** is a ruleset for [**rory**](https://github.com/Shopify/rory), a command-line linter that can be added into your text editor with [**linter-rory**](https://github.com/Shopify/linter-rory).
+Check phrases for simpler alternatives with [**retext**][retext].
 
 ## Installation
 
-This package is automatically installed as a dependency of [**rory**](https://github.com/Shopify/rory).
+[npm][npm-install]:
 
-## Contributing
-
-Content rules are written in `script/content.yml`, which is processed by `extract.js` into a JSON object.
-
-### Content rules
-
-The rule set is a list of simple word matches (for now) written in YAML with the following format:
-
-```
-- type: simple
-  note: [reason for the error]
-  incorrect: [word(s) to flag as incorrect]
-  correct: [word(s) to suggest as a correction]
+```bash
+npm install retext-simplify
 ```
 
-For example:
+**retext-simplify** is also available for [duo][duo-install], and as an
+AMD, CommonJS, and globals module, [uncompressed and compressed][releases].
 
-```
-- type: simple
-  note: avoid unnecessarily wordy phrases
-  incorrect: due to the fact that
-  correct: because
-```
+## Usage
 
-For the `note`, use a short, imperative phrase explaining the error. Don't capitalize it and don't add punctuation at the end.
+```js
+var retext = require('retext');
+var simplify = require('retext-simplify');
+var report = require('vfile-reporter');
 
-The `incorrect` or `correct` items can be arrays:
-
-```
-- type: simple
-  note: use 'have', not 'of'
-  incorrect:
-    - could of
-    - should of
-    - would of
-  correct:
-    - could have
-    - should have
-    - would have
+retext()
+    .use(simplify)
+    .process([
+        'You can utilize a shorter word.',
+        'Be advised, don’t do this.',
+        'That’s the appropriate thing to do.'
+    ].join('\n'), function (err, file) {
+        console.log(report(file));
+    });
 ```
 
-### Updating rules
+Yields:
 
-1. Clone this repo to your local machine and `cd` into its folder.
-2. Create a branch for your changes (`git checkout -b rule-list-update`).
-2. Open `script/content.yml` in a text editor.
-3. Make your changes to the rule list.
-4. Save `content.yml`.
-5. Run `npm run-script build-extract` from the repository root to regenerate the JSON word list.
-6. Commit your changes (`git commit -am "Your commit message"`). The changed files should be `content.yml` and `patterns.json`.
-6. Run `git push origin your-branch-name` to create a pull request with your changes.
+```txt
+<stdin>
+   1:9-1:16  warning  Replace “utilize” with “use”                                utilize
+   2:1-2:11  warning  Remove “Be advised”                                         be advised
+  3:12-3:23  warning  Replace “appropriate” with “proper”, “right”, or remove it  appropriate
+
+⚠ 3 warnings
+```
+
+## API
+
+### `retext.use(simplify[, options])`
+
+Check phrases for simpler alternatives.
+
+**Parameters**
+
+*   `simplify` — This plug-in;
+
+*   `options` (`Object?`, optional):
+
+    *   `ignore` (`Array.<string>`)
+        — List of phrases to _not_ warn about.
+
+## License
+
+[MIT][license] © [Titus Wormer][author]
+
+<!-- Definitions -->
+
+[travis-badge]: https://img.shields.io/travis/wooorm/retext-simplify.svg
+
+[travis]: https://travis-ci.org/wooorm/retext-simplify
+
+[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/retext-simplify.svg
+
+[codecov]: https://codecov.io/github/wooorm/retext-simplify
+
+[npm-install]: https://docs.npmjs.com/cli/install
+
+[duo-install]: http://duojs.org/#getting-started
+
+[releases]: https://github.com/wooorm/retext-simplify/releases
+
+[license]: LICENSE
+
+[author]: http://wooorm.com
+
+[retext]: https://github.com/wooorm/retext
