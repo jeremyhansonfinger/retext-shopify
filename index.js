@@ -21,12 +21,6 @@ var quotation = require('quotation');
 var search = require('nlcst-search');
 var patterns = require('./data/index.json');
 
-//var list = {};
-
-//vocabulary.forEach(function(term) {
-//    list[term] = { "cased": true }
-//});
-
 /*
  * List of all phrases.
  */
