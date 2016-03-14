@@ -1,18 +1,9 @@
 {
-  "name": "retext-simplify",
-  "version": "1.2.0",
+  "name": "retext-styleguide",
+  "version": "0.1.0",
   "description": "Check phrases for simpler alternatives",
-  "license": "MIT",
-  "keywords": [
-    "simple",
-    "simpler",
-    "synonym",
-    "alternative",
-    "phrase",
-    "retext",
-    "plugin"
-  ],
-  "repository": "wooorm/retext-simplify",
+  "license": "UNLICENSED",
+  "repository": "Shopify/retext-styleguide",
   "dependencies": {
     "sindresorhus/array-differ": "^1.0.0",
     "wooorm/nlcst-search": "^1.0.0",

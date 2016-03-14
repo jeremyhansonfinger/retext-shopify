@@ -1,7 +1,5 @@
 # retext-simplify [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
 
-Help!
-
 Check phrases for simpler alternatives with [**retext**][retext].
 
 ## Installation

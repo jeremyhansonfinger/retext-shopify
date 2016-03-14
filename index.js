@@ -2,7 +2,7 @@
  * @author Titus Wormer
  * @copyright 2016 Titus Wormer
  * @license MIT
- * @module retext:simplify
+ * @module retext:styleguide
  * @fileoverview Check phrases for simpler alternatives.
  */
 
@@ -20,6 +20,13 @@ var nlcstToString = require('nlcst-to-string');
 var quotation = require('quotation');
 var search = require('nlcst-search');
 var patterns = require('./data/index.json');
+var vocabulary = require('./data/vocabulary');
+
+//var list = {};
+
+//vocabulary.forEach(function(term) {
+//    list[term] = { "cased": true }
+//});
 
 /*
  * List of all phrases.
@@ -38,7 +45,7 @@ var list = keys(patterns);
  *   - List of phrases to *not* warn about.
  * @return {Function} - `transformer`.
  */
-function attacher(processor, options) {
+    function attacher(processor, options) {
     var ignore = (options || {}).ignore || [];
     var phrases = difference(list, ignore);
 
@@ -52,20 +59,27 @@ function attacher(processor, options) {
         search(tree, phrases, function (match, position, parent, phrase) {
             var pattern = patterns[phrase];
             var replace = pattern.replace;
+            var matchedString = nlcstToString(match);
             var value = quotation(nlcstToString(match), '“', '”');
-            var message;
+            var message = undefined;
 
-            if (pattern.omit && !replace.length) {
+            if (!replace.length) {
                 message = 'Remove ' + value;
-            } else {
-                message = 'Replace ' + value + ' with ' +
-                    quotation(replace, '“', '”').join(', ');
-
-                if (pattern.omit) {
-                    message += ', or remove it';
-                }
+           }
+            
+            else if (pattern.cased && matchedString == replace){
+                message = "Matched " + value + ", but that is wrong because it is exactly the same as \"" + replace + ".\"";
+            }
+            
+            else if (pattern.cased && matchedString !== replace){
+                message = "Matched " + value + ". Write as \"" + replace + ".\"";
             }
 
+            else if (!pattern.cased && matchedString !== replace){
+                message = "Matched " + value + ". Write as \"" + replace + ".\"";
+            }         
+         
+           if (message)
             message = file.warn(message, {
                 'start': match[0].position.start,
                 'end': match[match.length - 1].position.end
@@ -74,7 +88,8 @@ function attacher(processor, options) {
             message.ruleId = phrase;
             message.source = 'retext-simplify';
         });
-    }
+            }
+
 
     return transformer;
 }
@@ -84,3 +99,5 @@ function attacher(processor, options) {
  */
 
 module.exports = attacher;
+
+console.log(list);

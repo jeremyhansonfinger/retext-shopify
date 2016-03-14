@@ -1,26 +1,18 @@
 {
-  "name": "retext-simplify",
-  "version": "1.2.0",
-  "description": "Check phrases for simpler alternatives",
-  "license": "MIT",
-  "keywords": [
-    "simple",
-    "simpler",
-    "synonym",
-    "alternative",
-    "phrase",
-    "retext",
-    "plugin"
-  ],
+  "name": "retext-styleguide",
+  "version": "0.1.0",
+  "description": "Warn about Shopify style guide violations with Retext",
+  "license": "UNLICENSED",
+  "private": true,
   "files": [
     "index.js",
     "data/index.json"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wooorm/retext-simplify.git"
+    "url": "https://github.com/Shopify/retext-styleguide.git"
   },
-  "bugs": "https://github.com/wooorm/retext-simplify/issues",
+  "bugs": "https://github.com/Shopify/retext-styleguide/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "dependencies": {
     "array-differ": "^1.0.0",
