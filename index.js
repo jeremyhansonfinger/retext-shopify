@@ -60,16 +60,16 @@ var list = keys(patterns);
                 message = 'Remove ' + value;
            }
             
-            else if (pattern.cased && matchedString == replace){
-                message = "Matched " + value + ", but that is wrong because it is exactly the same as \"" + replace + ".\"";
-            }
-            
             else if (pattern.cased && matchedString !== replace){
                 message = "Matched " + value + ". Write as \"" + replace + ".\"";
             }
 
             else if (!pattern.cased && matchedString !== replace){
                 message = "Matched " + value + ". Write as \"" + replace + ".\"";
+            }
+
+            else if (pattern.cased && matchedString === replace){
+              return transformer
             }         
          
            if (message)
@@ -80,7 +80,7 @@ var list = keys(patterns);
 
             message.ruleId = phrase;
             message.source = 'retext-simplify';
-        });
+            });
             }
 
 
