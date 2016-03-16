@@ -9,8 +9,12 @@ retext()
         'I love using liquid.',
         'I\'m on the Shopify unlimited Plan',
         'I\'m on the Shopify Unlimited plan',
-        'I need to refill my drink.',
-        'Get off my ice!'
+        'I\'m on the Shopify UnLimited plan',
+        'I love Shopify point of sale',
+        'I love shopify point of sale',
+        'Unfortunately, I need to e.g. customise my drink',
+        'Oops, I need to Customise my drink with the shopify manual',
+        '!'
     ].join('\n'), function (err, file) {
         console.log(report(file));
     });
