@@ -14,7 +14,7 @@ Content rules are written in `data/index.json`.
 
 ### Content rules
 
-The rule set is a list of simple word matches written in JSON with the following format:
+The rule set is a list of simple phrase matches written in JSON with the following format:
 
 ```
   "[incorrect phrase]": {
@@ -33,7 +33,7 @@ For example:
   },
 ```
 
-This rule would flag the word `Customise` with the following message:
+This rule would flag the phrase `Customise` with the following message:
 
 ```
 <stdin>
@@ -83,9 +83,9 @@ If you want **Rorybot** to suggest multiple possible replacements for an incorre
 
 ##### Capitalization
 
-Enter the incorrect phrase string as lowercase, but use the correct casing for the replacement string. The linter will flag any matching string if it doesn't have the same casing as the replacement phrase string.
+Enter the incorrect phrase as lowercase, but use the correct casing for the replacement phrase. The linter will flag any matching string if it doesn't have the same casing as the replacement phrase.
 
-If `Shopify POS` and `Unlimited plan` are the only ways you want to style these two strings, the rules would look like this:
+If `Shopify POS` and `Unlimited plan` are the only ways you want to style these two phrases, the rules would look like this:
 
 ```json
   "shopify point of sale": {
