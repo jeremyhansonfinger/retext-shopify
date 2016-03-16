@@ -1,33 +1,30 @@
 {
   "lite plan": {
-    "cased": true,
+    "note": "Incorrect capitalization of branded name.",
     "replace": "Lite plan"
-  },
-  "basic plan": {
-    "cased": true
-  },
-  "pro plan": {
-    "cased": true
+  },  
+  "shopify point of sale": {
+    "note": "Incorrect branded name.",
+    "replace": "Shopify POS"
   },
   "unlimited plan": {
-    "cased": true,
-    "note": "The U is capitalized.",
+    "note": "Incorrect capitalization of branded name.",
     "replace": "Unlimited plan"
   },
-  "plus plan": {
-    "cased": true
+  "e.g.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
   },
-  "liquid": {
-    "cased": true,
-    "replace": "Liquid"
+  "shopify manual": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
   },
-  "refill": {
-    "replace": [
-      "fill"
-    ]
+  "customise": {
+    "replace": ["customize"],
+    "note": "Use American spelling."  
   },
-  "ice": {
-    "replace": [],
-    "note": "You little wankers, get off my ice!"
+  "oops": {
+    "replace":[],
+    "note": "Just don't."
   }
 }

@@ -1,84 +1,108 @@
-# retext-simplify [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# retext-styleguide
 
-Check phrases for simpler alternatives with [**retext**][retext].
+Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
+
+**retext-styleguide** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
 
 ## Installation
 
-[npm][npm-install]:
+This package is automatically installed as a dependency of [**rorybot**](https://github.com/Shopify/rorybot).
 
-```bash
-npm install retext-simplify
+## Contributing
+
+Content rules are written in `data/index.json`.
+
+### Content rules
+
+The rule set is a list of simple word matches written in JSON with the following format:
+
+```
+  "[incorrect phrase]": {
+    "note": "[reason for the warning]",
+    "replace": "[replacement phrase(s)]"
+  },
+
 ```
 
-**retext-simplify** is also available for [duo][duo-install], and as an
-AMD, CommonJS, and globals module, [uncompressed and compressed][releases].
 
-## Usage
+### Note guidelines
 
-```js
-var retext = require('retext');
-var simplify = require('retext-simplify');
-var report = require('vfile-reporter');
+When you enter the `note`, use a short, imperative sentence explaining the warning. Be sure to capitalize and add punctuation at the end.
 
-retext()
-    .use(simplify)
-    .process([
-        'You can utilize a shorter word.',
-        'Be advised, don’t do this.',
-        'That’s the appropriate thing to do.'
-    ].join('\n'), function (err, file) {
-        console.log(report(file));
-    });
+#### Remove replacement
+
+If you don't define a replacement, just put two square brackets (`[]`) before the comma instead. When **rorybot** runs it will tell you to avoid using that term and print the explanatory note.
+
+```json
+    "oops": {
+    "replace": [],
+    "note": "Just don't."
+  },
 ```
 
-Yields:
+This rule would flag the phrase `Oops` with the following message:
 
-```txt
+```
 <stdin>
-   1:9-1:16  warning  Replace “utilize” with “use”                                utilize
-   2:1-2:11  warning  Remove “Be advised”                                         be advised
-  3:12-3:23  warning  Replace “appropriate” with “proper”, “right”, or remove it  appropriate
-
-⚠ 3 warnings
+  9:1-9:5  warning  “Oops” is not Shopify style. 
+    Avoid using it. (Just don't.)
 ```
 
-## API
+#### Multiple replacements
 
-### `retext.use(simplify[, options])`
+If you want **Rorybot** to suggest multiple possible replacements for an incorrect phrase, separate the replacement phrases with a comma and place them within square brackets, like this:
 
-Check phrases for simpler alternatives.
+```json
+    "e.g.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+```
 
-**Parameters**
+```
+<stdin>
+  8:26-8:30  warning  “e.g.” is not Shopify style. 
+    Use “like”,“for example” instead. (Avoid Latin abbreviations.)
+```
 
-*   `simplify` — This plug-in;
+##### Capitalization
 
-*   `options` (`Object?`, optional):
+Enter the incorrect phrase string as lowercase, but use the correct casing for the replacement string. The linter will flag any matching string if it doesn't have the same casing as the replacement phrase string.
 
-    *   `ignore` (`Array.<string>`)
-        — List of phrases to _not_ warn about.
+If `Shopify POS` and `Unlimited plan` are the only ways you want to style these two strings, the rules would look like this:
 
-## License
+```json
+  "shopify point of sale": {
+    "note": "Incorrect branded name.",
+    "replace": "Shopify POS"
+  },
+  "unlimited plan": {
+    "note": "Incorrect capitalization.",
+    "replace": "Unlimited plan"
+  },
 
-[MIT][license] © [Titus Wormer][author]
+```
 
-<!-- Definitions -->
+For instance, based on the above rules, if you ran **rorybot** on a document containing the phrases `unlimited Plan`, `UnLimited plan`, `Shopify point of sale`, `shopify point of sale`, you'd get the following warnings:
 
-[travis-badge]: https://img.shields.io/travis/wooorm/retext-simplify.svg
+```
+<stdin>
+  3:20-3:34  warning  “unlimited Plan” is not Shopify style. 
+    Use “Unlimited plan” instead. (Incorrect capitalization.)
+  5:20-5:34  warning  “UnLimited plan” is not Shopify style. 
+    Use “Unlimited plan” instead. (Incorrect capitalization.)
+  6:8-6:29  warning  “Shopify point of sale” is not Shopify style.
+    Use “Shopify POS” instead. (Incorrect branded name.)
+  7:8-7:29  warning  “shopify point of sale” is not Shopify style.
+    Use “Shopify POS” instead. (Incorrect branded name.)
+```
 
-[travis]: https://travis-ci.org/wooorm/retext-simplify
+### Updating rules
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/retext-simplify.svg
-
-[codecov]: https://codecov.io/github/wooorm/retext-simplify
-
-[npm-install]: https://docs.npmjs.com/cli/install
-
-[duo-install]: http://duojs.org/#getting-started
-
-[releases]: https://github.com/wooorm/retext-simplify/releases
-
-[license]: LICENSE
-
-[author]: http://wooorm.com
-
-[retext]: https://github.com/wooorm/retext
+1. Clone this repo to your local machine and `cd` into its folder.
+2. Create a branch for your changes (`git checkout -b rule-list-update`).
+2. Open `data/index.json` in a text editor.
+3. Make your changes to the rule list.
+4. Save `index.json`.
+6. Commit your changes (`git commit -am "Your commit message"`). The changed files should be `index.json`.
+6. Run `git push origin your-branch-name` to create a pull request with your changes.

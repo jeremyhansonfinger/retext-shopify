@@ -1,7 +1,7 @@
 /**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
+ * @author Adam Hollett and Jeremy Hanson-Finger
+ * @copyright 2016 Shopify
+ * @license ISC
  * @module retext:styleguide
  * @fileoverview Check phrases for simpler alternatives.
  */
@@ -59,20 +59,20 @@ var list = keys(patterns);
             var message = undefined;
 
             if (!replace.length) {
-                message = value + " isn't Shopify style. Avoid using it.";
+                message = value + " is not Shopify style. Avoid using it.";
 
                   if (note)
                       message += " (" + note + ")"
            }
             
             else if (matchedString !== replace){
-                message = value + " isn't Shopify style. Use " + newvalue + " instead.";
+                message = value + " is not Shopify style. Use " + newvalue + " instead.";
 
                   if (note)
                       message += " (" + note + ")"
             }
 
-            else if (pattern.cased && matchedString === replace){
+            else if (matchedString === replace){
               return transformer
             }         
          
