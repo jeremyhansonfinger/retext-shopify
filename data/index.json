@@ -20,7 +20,7 @@
     "note": "Incorrect branded name."
   },
   "customise": {
-    "replace": ["customize"],
+    "replace": "customize",
     "note": "Use American spelling."  
   },
   "oops": {

@@ -24,12 +24,28 @@ The rule set is a list of simple word matches written in JSON with the following
 
 ```
 
+For example:
+
+```
+  "customise": {
+    "replace": "customize",
+    "note": "Use American spelling."  
+  },
+```
+
+This rule would flag the word `Customise` with the following message:
+
+```
+<stdin>
+  9:17-9:26  warning  “Customise” is not Shopify style. 
+    Use “customize” instead. (Use American spelling.)
+```
 
 ### Note guidelines
 
 When you enter the `note`, use a short, imperative sentence explaining the warning. Be sure to capitalize and add punctuation at the end.
 
-#### Remove replacement
+#### No replacement
 
 If you don't define a replacement, just put two square brackets (`[]`) before the comma instead. When **rorybot** runs it will tell you to avoid using that term and print the explanatory note.
 
