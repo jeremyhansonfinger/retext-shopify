@@ -1,7 +1,7 @@
 /**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
+ * @author Adam Hollett and Jeremy Hanson-Finger
+ * @copyright 2016 Shopify
+ * @license ISC
  * @module retext:styleguide
  * @fileoverview Check phrases for simpler alternatives.
  */
