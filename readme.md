@@ -49,6 +49,8 @@ When you enter the `note`, use a short, imperative sentence explaining the warni
 
 If you don't define a replacement, just put two square brackets (`[]`) before the comma instead. When **rorybot** runs it will tell you to avoid using that term and print the explanatory note.
 
+For example:
+
 ```json
     "oops": {
     "replace": [],
