@@ -152,5 +152,5 @@ retext()
 4. In your terminal, run `node test2.js` to see the results of running **Rorybot** on those strings using the **retext-styleguide** library. If you want to output the result to a file in the same directory, run `node test2.js | tee output.txt` (but you can call `output.txt` whatever you want). 
 5. Check your JSON in a [JSON validator](http://jsonlint.com/) if you run into issues.
 
-In the future we'll define more rules about when and where to add test strings, but for now save `test2.js` with whatever test strings you think are important and push it to your branch along with your changed `index.json`. 
+In the future we'll define more rules about when and where to add test strings, but for now before you commit and push to your remote branch, save `test2.js` with whatever test strings you think are important. 
 
