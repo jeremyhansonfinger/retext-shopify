@@ -130,7 +130,7 @@ For instance, based on the above rules, if you ran **rorybot** on a document con
 
 1. `cd` into your local copy of the repo.
 2. Open `test2.js` in a text editor. 
-3. Add the cases you want to test for to the list, in single quotes and separated by commas:
+3. Add the strings you want to test to the list, in single quotes and separated by commas:
 ```js
 retext()
     .use(styleguide)
