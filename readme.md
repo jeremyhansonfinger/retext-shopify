@@ -129,7 +129,7 @@ For instance, based on the above rules, if you ran **rorybot** on a document con
 ### Testing rules
 
 1. `cd` into your local copy of the repo.
-2. Open `test2.js` in a text editor. 
+2. Open `test.js` in a text editor. 
 3. Add the strings you want to test to the list, in single quotes and separated by commas:
 ```js
 retext()
@@ -148,9 +148,9 @@ retext()
     });
 
 ```
-4. Save `test2.js`.
-4. In your terminal, run `node test2.js` to see the results of running **Rorybot** on those strings using the **retext-styleguide** library. If you want to output the result to a file in the same directory, run `node test2.js | tee output.txt` (but you can call `output.txt` whatever you want). 
+4. Save `test.js`.
+4. In your terminal, run `node test.js` to see the results of running **Rorybot** on those strings using the **retext-styleguide** library. If you want to output the result to a file in the same directory, run `node test.js | tee output.txt` (but you can call `output.txt` whatever you want). 
 5. Check your JSON in a [JSON validator](http://jsonlint.com/) if you run into issues.
 
-In the future we'll define more rules about when and where to add test strings, but for now before you commit and push to your remote branch, save `test2.js` with whatever test strings you think are important. 
+In the future we'll define more rules about when and where to add test strings, but for now before you commit and push to your remote branch, save `test.js` with whatever test strings you think are important. 
 
