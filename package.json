@@ -1,5 +1,5 @@
 {
-  "name": "retext-styleguide",
+  "name": "retext-shopify",
   "version": "0.1.0",
   "description": "Warn about Shopify style guide violations with Retext",
   "license": "UNLICENSED",
@@ -10,9 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shopify/retext-styleguide.git"
+    "url": "https://github.com/Shopify/retext-shopify.git"
   },
-  "bugs": "https://github.com/Shopify/retext-styleguide/issues",
+  "bugs": "https://github.com/Shopify/retext-shopify/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "dependencies": {
     "array-differ": "^1.0.0",

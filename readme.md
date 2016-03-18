@@ -1,8 +1,8 @@
-# retext-styleguide
+# retext-shopify
 
 Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
 
-**retext-styleguide** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
+**retext-shopify** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
 
 ## Installation
 
@@ -133,7 +133,7 @@ For instance, based on the above rules, if you ran **rorybot** on a document con
 3. Add the strings you want to test to the list, in single quotes and separated by commas:
 ```js
 retext()
-    .use(styleguide)
+    .use(shopify)
     .process([
         'I love using Liquid.',
         'I love using liquid.',
@@ -149,7 +149,7 @@ retext()
 
 ```
 4. Save `test.js`.
-4. In your terminal, run `node test.js` to see the results of running **Rorybot** on those strings using the **retext-styleguide** library. If you want to output the result to a file in the same directory, run `node test.js | tee output.txt` (but you can call `output.txt` whatever you want). 
+4. In your terminal, run `node test.js` to see the results of running **Rorybot** on those strings using the **retext-shopify** library. If you want to output the result to a file in the same directory, run `node test.js | tee output.txt` (but you can call `output.txt` whatever you want). 
 5. Check your JSON in a [JSON validator](http://jsonlint.com/) if you run into issues.
 
 In the future we'll define more rules about when and where to add test strings, but for now before you commit and push to your remote branch, save `test.js` with whatever test strings you think are important. 

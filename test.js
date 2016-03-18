@@ -1,9 +1,9 @@
 var retext = require('retext');
-var styleguide = require('./index');
+var shopify = require('./index');
 var report = require('vfile-reporter');
 
 retext()
-    .use(styleguide)
+    .use(shopify)
     .process([
         'I love using Liquid.',
         'I love using liquid.',

@@ -2,7 +2,7 @@
  * @author Adam Hollett and Jeremy Hanson-Finger
  * @copyright 2016 Shopify
  * @license ISC
- * @module retext:styleguide
+ * @module retext:shopify
  * @fileoverview Check phrases for simpler alternatives.
  */
 
@@ -83,7 +83,7 @@ var list = keys(patterns);
             });
 
             message.ruleId = phrase;
-            message.source = 'retext-styleguide';
+            message.source = 'retext-shopify';
             });
             }
 
