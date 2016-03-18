@@ -1,0 +1,30 @@
+{
+  "lite plan": {
+    "note": "Incorrect capitalization of branded name.",
+    "replace": "Lite plan"
+  },  
+  "shopify point of sale": {
+    "note": "Incorrect branded name.",
+    "replace": "Shopify POS"
+  },
+  "unlimited plan": {
+    "note": "Incorrect capitalization of branded name.",
+    "replace": "Unlimited plan"
+  },
+  "e.g.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "shopify manual": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
+  },
+  "customise": {
+    "replace": "customize",
+    "note": "Use American spelling."  
+  },
+  "oops": {
+    "replace":[],
+    "note": "Just don't."
+  }
+}

@@ -1,22 +1,20 @@
 {
   "name": "retext-styleguide",
   "version": "0.1.0",
-  "description": "Warn about Shopify style guide violations with Retext",
+  "description": "Check phrases for simpler alternatives",
   "license": "UNLICENSED",
+  "repository": "Shopify/retext-styleguide",
   "dependencies": {
     "sindresorhus/array-differ": "^1.0.0",
-    "jonschlinkert/array-intersection": "^0.1.2",
-    "wooorm/nlcst-normalize": "^1.1.0",
-    "wooorm/nlcst-to-string": "^1.0.0",
-    "wooorm/nlcst-search": "^1.1.1",
-    "ljharb/object-keys": "^1.0.7",
-    "wooorm/quotation": "^1.0.1",
-    "wooorm/unist-util-visit": "^1.0.0"
+    "wooorm/nlcst-search": "^1.0.0",
+    "wooorm/nlcst-to-string": "^1.1.0",
+    "ljharb/object-keys": "^1.0.9",
+    "wooorm/quotation": "^1.0.0"
   },
-  "repository": "Shopify/retext-styleguide",
   "scripts": [
-    "lib/patterns.json",
-    "lib/equality.js",
     "index.js"
+  ],
+  "json": [
+    "data/index.json"
   ]
 }
