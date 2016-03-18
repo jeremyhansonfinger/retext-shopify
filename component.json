@@ -1,9 +1,9 @@
 {
-  "name": "retext-styleguide",
+  "name": "retext-shopify",
   "version": "0.1.0",
   "description": "Check phrases for simpler alternatives",
   "license": "UNLICENSED",
-  "repository": "Shopify/retext-styleguide",
+  "repository": "Shopify/retext-shopify",
   "dependencies": {
     "sindresorhus/array-differ": "^1.0.0",
     "wooorm/nlcst-search": "^1.0.0",
