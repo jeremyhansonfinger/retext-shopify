@@ -96,5 +96,3 @@ var list = keys(patterns);
  */
 
 module.exports = attacher;
-
-console.log(list);
