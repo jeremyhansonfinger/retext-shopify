@@ -123,7 +123,7 @@ For instance, based on the above rules, if you ran **rorybot** on a document con
 3. Make your changes to the rule list.
 4. Save `index.json`.
 5. Test your rules (see _Testing rules_).
-6. Commit your changes (`git commit -am "Your commit message"`). The changed files should be `index.json` and `test2.js`.
+6. Commit your changes (`git commit -am "Your commit message"`). The changed files should be `index.json` and `test.js`.
 6. Run `git push origin your-branch-name` to create a pull request with your changes.
 
 ### Testing rules
