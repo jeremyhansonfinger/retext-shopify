@@ -2,29 +2,157 @@
   "lite plan": {
     "note": "Incorrect capitalization of branded name.",
     "replace": "Lite plan"
-  },  
-  "shopify point of sale": {
-    "note": "Incorrect branded name.",
-    "replace": "Shopify POS"
   },
   "unlimited plan": {
     "note": "Incorrect capitalization of branded name.",
     "replace": "Unlimited plan"
   },
-  "e.g.": {
-    "replace": ["like", "for example"],
-    "note": "Avoid Latin abbreviations."
+  "shopify point of sale": {
+    "note": "Incorrect branded name.",
+    "replace": "Shopify POS"
   },
   "shopify manual": {
     "replace": "Shopify Help Center",
     "note": "Incorrect branded name."
   },
+  "shopify docs": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
+  },
+  "the documentation": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
+  },
+  "support docs": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
+  },
+  "help centre": {
+    "replace": "Shopify Help Center",
+    "note": "Incorrect branded name."
+  },
+  "shopify administrative panel": {
+    "replace": "Shopify admin",
+    "note": "Incorrect branded name."
+  },
+  "shopify dashboard": {
+    "replace": "Shopify admin",
+    "note": "Incorrect branded name."
+  },
+  "e.g.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "eg.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "eg.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "eg.": {
+    "replace": ["like", "for example"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "i.e.": {
+    "replace": "that is",
+    "note": "Avoid Latin abbreviations."  
+  },
+  "ie.": {
+    "replace": "that is",
+    "note": "Avoid Latin abbreviations."
+  },
+   "via": {
+    "replace": ["by","with"],
+    "note": "Avoid Latin abbreviations."
+  },
+  "login to": {
+    "replace": "log into",
+    "note": "Login is a noun, not a verb."
+  },
+  "off of": {
+    "replace": "off",
+    "note": "Avoid unncessary prepositions."
+  },
+  "open up": {
+    "replace": "open",
+    "note": "Avoid unncessary prepositions."
+  },
+  "close down": {
+    "replace": "close",
+    "note": "Avoid unncessary prepositions."
+  },
+  "as of yet": {
+    "replace": "yet",
+    "note": "Avoid unnecessarily wordy phrases."
+  },
+    "due to the fact that": {
+    "replace": "because",
+    "note": "Avoid unnecessarily wordy phrases."
+  },
   "customise": {
     "replace": "customize",
     "note": "Use American spelling."  
   },
+  "centre": {
+    "replace": "center",
+    "note": "Use American spelling."
+  },
+  "cancelled": {
+    "replace": "canceled",
+    "note": "Use American spelling."
+  },
+  "unfortunately": {
+    "replace": [],
+    "note": "Be direct and not apologetic."
+  },  
+  "sorry": {
+    "replace": [],
+    "note": "Be direct and not apologetic."
+  },  
   "oops": {
     "replace":[],
-    "note": "Just don't."
+    "note": "Be direct and not apologetic."  
+  },
+  "type in": {
+    "replace": "enter",
+    "note": "Use controlled vocabulary."
+  },
+  "input": {
+    "replace": "enter",
+    "note": "Use controlled vocabulary."
+  },
+  "write": {
+    "replace": "enter",
+    "note": "Use controlled vocabulary."
+  },
+  "click on": {
+    "replace": "click",
+    "note": "Use controlled vocabulary."
+  },
+  "would like to": {
+    "replace": "want to",
+    "note": "Use controlled vocabulary."
+  },
+  "wish to": {
+    "replace": "would like to",
+    "note": "Use controlled vocabulary."
+  },
+  "once the": {
+    "replace": ["when","after"],
+    "note": "Don't say 'once' if you mean 'when.'"
+  },
+  "once you": {
+    "replace": ["when","after"],
+    "note": "Don't say 'once' if you mean 'when.'"
+  },
+    "may": {
+    "replace": "might",
+    "note": "Use controlled vocabulary."
+  },
+  "dropdown menu": {
+    "replace": ["drop-down menu"],
+    "note": "Don't say 'once' if you mean 'when.'"
   }
 }
