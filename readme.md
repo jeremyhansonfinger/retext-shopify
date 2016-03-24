@@ -4,9 +4,9 @@ Warn about Shopify style guide violations with [**retext**](https://github.com/w
 
 **retext-shopify** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
 
-## Installation
+## Installing and updating
 
-This package is automatically installed as a dependency of [**rorybot**](https://github.com/Shopify/rorybot).
+This package is automatically installed and updated as a dependency of [**rorybot**](https://github.com/Shopify/rorybot).
 
 ## Contributing
 
@@ -68,7 +68,7 @@ This rule would flag the phrase `Oops` with the following message:
 
 #### Multiple replacements
 
-If you want **Rorybot** to suggest multiple possible replacements for an incorrect phrase, separate the replacement phrases with a comma and place them within square brackets, like this:
+If you want **rorybot** to suggest multiple possible replacements for an incorrect phrase, separate the replacement phrases with a comma and place them within square brackets, like this:
 
 ```json
     "e.g.": {
@@ -149,7 +149,7 @@ retext()
 
 ```
 4. Save `test.js`.
-4. In your terminal, run `node test.js` to see the results of running **Rorybot** on those strings using the **retext-shopify** library. If you want to output the result to a file in the same directory, run `node test.js | tee output.txt` (but you can call `output.txt` whatever you want). 
+4. In your terminal, run `node test.js` to see the results of running **rorybot** on those strings using the **retext-shopify** library. If you want to output the result to a file in the same directory, run `node test.js | tee output.txt` (but you can call `output.txt` whatever you want). 
 5. Check your JSON in a [JSON validator](http://jsonlint.com/) if you run into issues.
 
 In the future we'll define more rules about when and where to add test strings, but for now before you commit and push to your remote branch, save `test.js` with whatever test strings you think are important. 
