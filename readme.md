@@ -1,8 +1,8 @@
-# retext-shopify
+# Retext-shopify
 
 Warn about Shopify style guide violations with [**retext**](https://github.com/wooorm/retext).
 
-**retext-shopify** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
+**Retext-shopify** is a ruleset for [**rorybot**](https://github.com/Shopify/rorybot), a command-line linter that can be added into your text editor. See [**linter-rorybot**](https://github.com/Shopify/linter-rorybot) if you use Atom or [**sublimelinter-rorybot**](https://github.com/Shopify/sublimelinter-rorybot) if you use Sublime Text. 
 
 ## Installing and updating
 
