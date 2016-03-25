@@ -154,5 +154,9 @@
   "dropdown menu": {
     "replace": ["drop-down menu"],
     "note": "Hyphenate this term."
+  },
+    "drop down menu": {
+    "replace": ["drop-down menu"],
+    "note": "Hyphenate this term."
   }
 }

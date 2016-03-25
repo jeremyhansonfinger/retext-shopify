@@ -10,8 +10,9 @@ retext()
         'I\'m on the Shopify unlimited Plan',
         'I\'m on the Shopify Unlimited plan',
         'I\'m on the Shopify UnLimited plan',
-        'I love Shopify point of sale',
-        'I love shopify point of sale',
+        'Check out the drop-down menu in Shopify point of sale',
+        'I love the dropdown menu in shopify point of sale',
+        'I love the drop down menu',
         'Unfortunately, I need to close down, i.e., customise my drink',
         'Oops, I need to Customise my drink with the shopify manual',
         '!'
