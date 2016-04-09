@@ -48,7 +48,7 @@ var list = keys(patterns);
      * @param {Node} tree - NLCST node.
      * @param {VFile} file - Virtual file.
      */
-    function transformer(tree, file) {
+    function transformer(tree, file, options) {
         search(tree, phrases, function (match, position, parent, phrase) {
             var pattern = patterns[phrase];
             var replace = pattern.replace;
@@ -81,10 +81,9 @@ var list = keys(patterns);
                 'start': match[0].position.start,
                 'end': match[match.length - 1].position.end
             });
-
             message.ruleId = phrase;
             message.source = 'retext-shopify';
-            });
+            }, false, true);
             }
 
 
